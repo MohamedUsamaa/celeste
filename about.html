@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="stile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   <nav class="navbar">
+     <div class="logo">⚱💨CÉℓESTE</div>
+     <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+         <li><a href="shop.html">SHOP</a></li>
+         <li><a href="#">MEN</a></li>
+         <li><a href="#">WOMEN</a></li>
+         <li><a href="#">ABOUT </a></li>
+         <li><a href="contact.html">CONTACT </a></li>
+     </ul>
+     <div class="icons"  style="position: relative;">
+       <i class="fas fa-search" id="searchBtn" style="cursor: pointer;"></i>
+       <div id="searchPopup" class="search-popup">
+         <input type="text" id="searchInput" placeholder="ابحث هنا...">
+         <button onclick="performSearch()">بحث</button>
+       </div>
+       <i class="fas fa-heart" id="favoriteBtn" style="cursor: pointer;"></i>
+       <i class="fas fa-user" id="userBtn" style="cursor: pointer;"></i>
+       <i class="fas fa-shopping-cart" id="cartBtn" style="cursor: pointer;"></i>
+    </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="title">
+                    <h2>The Céleste Perfume</h2>
+                    <p>More than 10+ years of experiance</p>
+                </div>
+                <div class="about-content">
+                    <div>
+                        <p>Welcome to our perfume store.
+                           We are passionate about scents
+                           and offer a wide selection of the finest perfumes
+                           for men and women.
+                        </p>
+                        <p>Our goal is to bring you high-quality
+                           fragrances that suit every style and occasion.
+                        </p>
+                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                    <img src="./icons/WhatsApp Image 2025-04-11 at 19.04.23_6d823246.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--about end-->
+    <!-- تحت قسم </main> مباشرة، أضف التالي: -->
+  <footer class="footer">
+     <div class="footer-container">
+       <div class="footer-about">
+         <h3>Céleste Perfume</h3>
+         <p>Luxury scents crafted with elegance. Discover your signature fragrance with us.</p>
+       </div>
+       <div class="footer-links">
+         <h4>Quick Links</h4>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="#">Men</a></li>
+           <li><a href="#">Women</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+       <div class="footer-social">
+         <h4>Follow Us</h4>
+         <div class="social-icons">
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+         </div>
+       </div>
+     </div>
+     <p class="copyright">© 2025 Céleste. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

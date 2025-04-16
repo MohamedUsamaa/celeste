@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Céleste Perfumes</title>
+  <link rel="stylesheet" href="stile.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">⚱💨CÉℓESTE</div>
+    <ul class="nav-links">
+      <li><a href="#">HOME</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="icons"  style="position: relative;">
+      <i class="fas fa-search" id="searchBtn" style="cursor: pointer;"></i>
+      <div id="searchPopup" class="search-popup" >
+        <input type="text" id="searchInput" placeholder="ابحث هنا...">
+        <button onclick="performSearch()">بحث</button>
+      </div>
+      <i class="fas fa-heart" id="favoriteBtn" style="cursor: pointer;"></i>
+      <i class="fas fa-user" id="userBtn" style="cursor: pointer;"></i>
+      <i class="fas fa-shopping-cart" id="cartBtn" style="cursor: pointer;"></i>
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-left">
+      <img src="icons/WhatsApp Image 2025-04-12 at 17.49.41_784c8481.jpg" alt="">
+      <div class="discount">25% Off<br><span>ON NEW ARRIVALS</span></div>
+    </div>
+    <div class="hero-right">
+      <div class="top-right-image">
+        <img src="icons/cropped_image.png" alt="Perfume Circle">
+      </div>
+      <h1 class="title">FRAGRANCE <br><span>EXCLUSIVES</span></h1>
+      <p class="description">
+        The most popular perfumes are a blend of timeless scents and those that have recently won our hearts,
+        ranging from summer in a bottle to intensely sensual notes of love.
+      </p>
+      <div class="products">
+        <div class="product">
+          <img src="icons/WhatsApp Image 2025-04-11 at 19.04.24_60dbfcba.jpg" alt="Tom Ford">
+          <a href="her.html" class="btn">FOR HER <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product">
+          <img src="icons/WhatsApp Image 2025-04-11 at 19.04.23_0cce54ce.jpg" alt="Chanel">
+          <a href="him.html" class="btn">FOR HIM <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
