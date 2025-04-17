@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-4 bg-white shadow-lg rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">Shopping Cart</h2>
+
+      <!-- Product 1 -->
+      <div class="flex items-center justify-between border-b pb-2 mb-4">
+        <div class="flex items-center space-x-4">
+          <img src="https://placehold.co/50" alt="Product" class="w-12 h-12 object-cover rounded" />
+          <div>
+            <h3 class="font-semibold">Product Name</h3>
+            <p class="text-sm text-gray-500">Price: $20</p>
+          </div>
+        </div>
+        <input type="number" value="1" class="w-12 h-8 px-2 border rounded product-qty" data-price="20" />
+      </div>
+
+      <!-- Product 2 -->
+      <div class="flex items-center justify-between border-b pb-2 mb-4">
+        <div class="flex items-center space-x-4">
+          <img src="https://placehold.co/50" alt="Product" class="w-12 h-12 object-cover rounded" />
+          <div>
+            <h3 class="font-semibold">Another Product</h3>
+            <p class="text-sm text-gray-500">Price: $30</p>
+          </div>
+        </div>
+        <input type="number" value="2" class="w-12 h-8 px-2 border rounded product-qty" data-price="30" />
+      </div>
+
+      <!-- Total -->
+      <div class="flex justify-between mt-4 font-semibold">
+        <span>Total:</span>
+        <span id="totalAmount">$0</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4">
+        <button onclick="updateTotal()" class="bg-orange-400 text-white px-4 py-2 rounded">Update Cart</button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateTotal() {
+      const qtyInputs = document.querySelectorAll('.product-qty');
+      let total = 0;
+      qtyInputs.forEach(input => {
+        const qty = parseInt(input.value) || 0;
+        const price = parseFloat(input.dataset.price);
+        total += qty * price;
+      });
+      document.getElementById('totalAmount').textContent = `$${total}`;
+    }
+
+    // تحديث المجموع عند تحميل الصفحة أول مرة
+    window.onload = updateTotal;
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f6f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[list],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Governorate</label>
+            <input list="gov" required="required">
+            <datalist id="gov">
+                <option value="Alexandria">
+                <option value="Cairo">
+                <option value="Beheira">
+                <option value="Matrouh">
+                <option value="Giza">
+            </datalist>
+        </div>
+        <div>
+            <label>Address</label>
+            <input type="text" required="required" autofocus >
+        </div>
+        <div>
+            <label>Phone No.</label>
+            <input type="tel"
+             name="phone" 
+             placeholder="01XXXXXXXXX"
+             required="required"
+             autofocus 
+             pattern="01[0-9]{9}"
+             maxlength="11">
+        </div>
+        <div>
+            <label for="perfum">Choose perfum</label>
+            <select name="perfum" id="perfum">
+                <optgroup label="Men">
+                    <option value="1">KING FURY</option>
+                    <option value="2">MINT REBEL</option>
+                    <option value="3">BURN FOR YOU</option>
+                    <option value="4">WILD EDGE </option>
+                    <option value="5">GENTEL FLAME</option>
+                    <option value="6">MIDNIGHT CODE</option>
+                    <option value="7">BLACK VELVET</option>
+                    <option value="8">ALPHA ZONE</option>
+                    <option value="9">CHARGED</option>
+                    <option value="10">OCEAN INK</option>
+                </optgroup>
+                 <optgroup label="women">
+                    <option value="11">WHIPPED MAGIC</option>
+                    <option value="12">BOLD SPIRIT</option>
+                    <option value="13">BERRY RUSH</option>
+                    <option value="14">ROSY GLOW</option>
+                    <option value="15">CHOCO KISS</option>
+                    <option value="16">RED CODE</option>
+                    <option value="17">DIVINE FLAME</option>
+                    <option value="18">DARK ROAST</option>
+                    <option value="19">SUGER TRAP</option>
+                    <option value="20">SOFTREBEL</option>
+                </optgroup>
+            </select>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>

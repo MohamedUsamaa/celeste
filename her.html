@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Celestè - Choose Your Perfume</title>
+  <link rel="stylesheet" href="stile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">⚱💨Cᴇℓᴇꜱᴛᴇ</div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="icons"  style="position: relative;">
+      <i class="fas fa-search" id="searchBtn" style="cursor: pointer;"></i>
+      <div id="searchPopup" class="search-popup">
+        <input type="text" id="searchInput" placeholder="ابحث هنا...">
+        <button onclick="performSearch()">بحث</button>
+      </div>
+      <i class="fas fa-heart" id="favoriteBtn" style="cursor: pointer;"></i>
+      <i class="fas fa-user" id="userBtn" style="cursor: pointer;"></i>
+      <i class="fas fa-shopping-cart" id="cartBtn" style="cursor: pointer;"></i>
+   </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="main-section">
+    <!-- Left: Image -->
+    <div class="left-image">
+      <img src="icons/WhatsApp Image 2025-04-13 at 23.53.00_f6472273.jpg" alt="Perfume">
+    </div>
+
+    <!-- Right: Text & Options -->
+    <div class="right-content">
+      <h2 class="brand-title">Cᴇℓᴇꜱᴛᴇ</h2>
+      <h1>Choose Your Perfume Experience</h1>
+      <a href="Personalized-women.html" class="option">Personalized Perfume for Women</a>
+      <a href="women.html" class="option">Ready-Made Perfume for Women</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
